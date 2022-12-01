@@ -1,0 +1,14 @@
+syntax = "proto3";
+package devices;
+service Sensor{
+    rpc Send (SensorRequest) returns (SensorResponse);
+}
+message SensorRequest{
+    string device = 1;
+}
+message SensorResponse{
+    bool successful = 1;
+    string message = 2;
+}
+
+

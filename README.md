@@ -1,1 +1,4 @@
-# rust-grpc-example
+'''
+cargo run --bin server
+cargo run --bin client
+'''
